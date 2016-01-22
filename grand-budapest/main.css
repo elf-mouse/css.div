@@ -1,0 +1,39 @@
+#grand-budapest {
+  background: #efabb3;
+}
+
+#grand-budapest div {
+  top: 0;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  background: transparent;
+  box-shadow: 0 205px 0 -6px #fbd0e4, 0 205px 0 -5px #f93050, 0 205px #fbd0e4, -105px 205px 0 -6px #fbd0e4, -105px 205px 0 -5px #f93050, -105px 205px #fbd0e4, 115px 205px 0 -6px #fbd0e4, 115px 205px 0 -5px #f93050, 115px 205px #fbd0e4, -80px 104px 0 -6px #fbd0e4, -80px 104px 0 -5px #f93050, -80px 104px #fbd0e4, 40px 104px 0 -6px #fbd0e4, 40px 104px 0 -5px #f93050, 40px 104px #fbd0e4;
+}
+
+@media (max-width: 400px) {
+  #grand-budapest div {
+    top: 30px;
+  }
+}
+
+#grand-budapest div:before {
+  font-family: 'Lucida Grande';
+  font-size: 12px;
+  font-weight: bold;
+  top: 250px;
+  left: -82px;
+  display: inline-block;
+  content: 'MENDL’S';
+  color: #f93050;
+  text-shadow: 220px 0 0 #f93050, 24px -101px #f93050;
+}
+
+#grand-budapest div:after {
+  top: 206px;
+  left: -60px;
+  width: 8px;
+  height: 100px;
+  background: #90baff;
+  box-shadow: 220px 0 #90baff, 145px -101px #90baff;
+}

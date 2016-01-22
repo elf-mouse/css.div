@@ -1,0 +1,44 @@
+#luggage-tag2 {
+  background: #f6dfc6;
+}
+
+#luggage-tag2 div {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 250px;
+  margin-top: -125px;
+  margin-left: -100px;
+  color: white;
+  border-radius: 10px;
+  background: white;
+  background-image: linear-gradient(to bottom, #f7f7f7 30%, #71bad7 30%, #71bad7 70%, #f7f7f7 70%);
+  box-shadow: 3px 5px 0 rgba(0, 0, 0, .1);
+}
+
+#luggage-tag2 div:before {
+  font-size: 70px;
+  bottom: 30px;
+  width: 200px;
+  height: 112px;
+  margin-top: -40px;
+  padding-top: 68px;
+  content: 'SFO';
+  border-bottom: 1px solid #71bad7;
+  background-image: linear-gradient(to right, transparent 100px, #71bad7 100px, #71bad7 101px, transparent 101px);
+}
+
+#luggage-tag2 div:after {
+  font-size: 16px;
+  top: 0;
+  width: 200px;
+  height: 30px;
+  padding-top: 85px;
+  content: 'SAN FRANCISCO';
+  background-image: radial-gradient(ellipse at center, #f8e9d8 20%, white 21%, white 45%, transparent 45%);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 65px 65px;
+}

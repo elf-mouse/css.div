@@ -1,0 +1,35 @@
+#brazil {
+  background: #f0e68c;
+}
+
+#brazil div {
+  width: 300px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -150px;
+  background: #fee63c;
+  background-image: linear-gradient(30deg, #019f6f 30%, transparent 30%), linear-gradient(-30deg, #019f6f 30%, transparent 30%), linear-gradient(210deg, #019f6f 30%, transparent 30%), linear-gradient(-210deg, #019f6f 30%, transparent 30%);
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, .1);
+}
+
+#brazil div:before {
+  top: 50%;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  margin-top: -45px;
+  margin-left: -45px;
+  border-radius: 50%;
+  background: #2765ae;
+  background-image: radial-gradient(circle at 0 175px, transparent 71%, white 72%, white 78%, transparent 79%);
+}
+
+#brazil div:after {
+  top: 80px;
+  left: 160px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: -45px 15px 0 0 white, -40px 30px 0 0 white, -27px 43px 0 0 white, -10px 36px 0 0 white, 13px 38px 0 0 white, -47px 32px 0 -1px white, -35px 25px 0 -1px white, -25px 20px 0 -1px white, -33px 34px 0 -1px white, -35px 40px 0 -1px white, -5px 22px 0 -1px white, -15px 26px 0 -1px white, -17px 32px 0 -1px white, -10px 29px 0 -1px white, -12px 53px 0 -1px white, 0 42px 0 -1px white, 5px 48px 0 -1px white, 6px 43px 0 -1px white, 8px 40px 0 -1px white, 12px 45px 0 -1px white, 17px 35px 0 -1px white, 23px 37px 0 -1px white;
+}

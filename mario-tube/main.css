@@ -1,0 +1,35 @@
+#mario-tube {
+  background: #8cb4ff;
+}
+
+#mario-tube div {
+  width: 170px;
+  height: 250px;
+  margin-top: -50px;
+  margin-left: -85px;
+  border-left: 1px solid #236d22;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 4%, rgba(0, 0, 0, 0) 10%), linear-gradient(-150deg, rgba(0, 0, 0, .4) 10%, rgba(0, 0, 0, 0) 20%), linear-gradient(to right, #2a7d2f 0%, #78fc73 25%, #78fc73 35%, #113e15 95%);
+}
+
+#mario-tube div:before {
+  top: -60px;
+  width: 210px;
+  height: 60px;
+  margin-left: -20px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, .3) 2px, rgba(255, 255, 255, .3) 3px, rgba(255, 255, 255, 0) 4px), linear-gradient(to top, rgba(0, 0, 0, .4) 3px, rgba(255, 255, 255, .2) 5px, rgba(255, 255, 255, 0) 6px), linear-gradient(to right, #2a7d2f 0%, #78fc73 25%, #78fc73 35%, #113e15 95%);
+}
+
+#mario-tube div:after {
+  top: -58px;
+  left: 30px;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, .7) 20%, rgba(255, 255, 255, .7) 80%, rgba(255, 255, 255, 0) 95%);
+}
+
+@media (max-width: 400px) {
+  #mario-tube div {
+    margin-top: -25px;
+  }
+}

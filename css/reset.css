@@ -1,0 +1,25 @@
+.element {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+}
+
+.element div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.element div:before,
+.element div:after {
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+@media (max-width: 400px) {
+  .element div {
+    transform: scale(.8);
+  }
+}
