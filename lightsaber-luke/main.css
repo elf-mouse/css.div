@@ -1,0 +1,33 @@
+#lightsaber-luke {
+  background: #f7f7f7;
+}
+
+#lightsaber-luke div {
+  top: 70px;
+  left: 50%;
+  width: 24px;
+  height: 96px;
+  margin-left: -12px;
+  background-image: linear-gradient(to bottom, #ccc 20px, #daa520 20px, #daa520 60px, #444 60px);
+}
+
+#lightsaber-luke div:before {
+  left: 50%;
+  width: 40px;
+  height: 250px;
+  margin-left: -20px;
+  border-bottom-right-radius: 40px 10px;
+  border-bottom-left-radius: 40px 10px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, .4) 35%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, .4) 65%, rgba(255, 255, 255, 0) 75%), linear-gradient(to bottom, #ccc 10px, transparent 10px, transparent 45px, #daa520 45px, #daa520 60px, #ccc 60px, #ccc 65px, transparent 65px), linear-gradient(to top, transparent 20px, rgba(0, 0, 0, .1) 20px, rgba(0, 0, 0, .1) 22px, transparent 22px), linear-gradient(to top, #ccc 90px, #444 90px, #444 98px, #ccc 98px, #ccc 102px, #444 102px, #444 106px, #ccc 106px, #ccc 110px, #444 110px, #444 114px, #ccc 114px, #ccc 118px, #444 118px, #444 122px, #ccc 122px, #ccc 126px, #444 126px, #444 130px, #ccc 130px, #ccc 134px, #444 134px, #444 138px, #ccc 138px, #ccc 142px, #444 142px, #444 146px, #ccc 146px, #ccc 150px, #444 150px, #444 154px, #ccc 154px, #ccc 158px, transparent 158px);
+}
+
+#lightsaber-luke div:after {
+  bottom: -112px;
+  left: -24px;
+  width: 10px;
+  height: 44px;
+  border-right: 4px solid #ccc;
+  border-left: 4px solid #daa520;
+  background-image: radial-gradient(circle at 7px 15px, #ff6347 2px, transparent 2px), radial-gradient(circle at 7px 7px, #0f0 2px, transparent 2px), linear-gradient(to bottom, #ccc 50%, #444 50%);
+  box-shadow: 1px 0 0 rgba(0, 0, 0, .2);
+}

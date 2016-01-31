@@ -19,7 +19,8 @@
 }
 
 @media (max-width: 400px) {
-  .element div {
+  .element div:not(.no-scale) {
+    -webkit-transform: scale(.8);
     transform: scale(.8);
   }
 }
