@@ -1,0 +1,34 @@
+#pizza-works {
+  background: #fff8dc;
+}
+
+#pizza-works div {
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+  background: #d2b48c;
+  background-image: radial-gradient(circle, rgba(255, 215, 0, 0.24) 30%, transparent 58%), radial-gradient(circle, #fffacd 55%, transparent 58%), radial-gradient(circle, #b22222 60%, transparent 61%), radial-gradient(circle, rgba(139, 69, 19, 0.4) 58%, transparent 64%), radial-gradient(circle, transparent 66%, #8b4513 81%);
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#pizza-works div:before {
+  width: 25px;
+  height: 25px;
+  left: 50px;
+  top: 50px;
+  background: #b22222;
+  border-radius: 50%;
+  box-shadow: 20px 20px 0 -5px #cd853f, 30px -20px 0 -5px #cd853f, -15px 25px 0 -5px #cd853f, 30px 60px 0 -5px #cd853f, 68px 25px 0 -5px #cd853f, 85px 80px 0 -5px #cd853f, 45px 25px 0 #b22222, 60px -15px 0 #b22222, -10px 50px 0 #b22222, 90px 30px 0 #b22222, 20px 90px 0 #b22222, 65px 70px 0 #b22222;
+}
+
+#pizza-works div:after {
+  width: 6px;
+  height: 6px;
+  left: 80px;
+  top: 60px;
+  background: #2e8b57;
+  border-radius: 2px;
+  box-shadow: 50px 10px 0 #2e8b57, -20px 30px 0 #2e8b57, -10px 55px 0 #2e8b57, -25px 80px 0 #2e8b57, 35px 50px 0 #2e8b57, 40px 90px 0 #2e8b57, 70px 60px 0 #2e8b57, 70px 0px 0 white, 25px -10px 0 white, -10px -15px 0 white, -15px 40px 0 white, 10px 30px 0 white, 20px 70px 0 white, 50px 50px 0 white, 55px 85px 0 white;
+}
