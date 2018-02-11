@@ -1,0 +1,23 @@
+html,
+body,
+.container {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.navigation {
+  width: 200px;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.content {
+  flex: 1;
+}
