@@ -1,0 +1,101 @@
+/*-----------------------------
+
+Alamo
+
+-----------------------------*/
+
+$alamo-body: linear-gradient(to right, bisque 50%, tan 50%);
+$alamo-border: linear-gradient(to right, floralwhite, floralwhite);
+
+#alamo {
+  background: goldenrod;
+
+  div {
+    width: 350px;
+    height: 250px;
+    margin-left: -(350px/2);
+    margin-top: -(250px/2);
+    background-repeat: no-repeat;
+    background-image: $alamo-body, $alamo-body, $alamo-body, $alamo-body,
+      radial-gradient(ellipse at top left, transparent 40px, bisque 40px),
+      radial-gradient(ellipse at top right, transparent 40px, tan 40px),
+      radial-gradient(ellipse at top left, transparent 40px, floralwhite 40px),
+      radial-gradient(ellipse at top right, transparent 40px, floralwhite 40px),
+      $alamo-border, $alamo-border, $alamo-border, $alamo-border,
+      radial-gradient(circle, floralwhite 35px, transparent 35px); // circle border
+
+    background-size: 330px 120px, 220px 18px, 180px 10px, 90px 50px, 120px 75px,
+      120px 75px, 120px 75px, 120px 75px, 340px 130px, 230px 28px, 190px 20px,
+      100px 60px, 100px 100px; // circle border
+
+    background-position: 10px 100px, 65px 85px, 85px 76px, 130px 50px, 92px 52px,
+      138px 52px, 88px 48px, 142px 48px, 5px 95px, 60px 80px, 80px 71px,
+      125px 45px, 125px 3px; // circle border
+
+    &::before {
+      width: 60px;
+      height: 80px;
+      margin-left: -(60px/2);
+      left: 50%;
+      top: 23px;
+      border-radius: 30px 30px 0 0;
+      background: linear-gradient(to right, bisque 50%, tan 50%);
+      box-shadow: 2px 128px 0 -11px rgba(205, 133, 63, 0.3),
+        0 126px 0 -9px rgba(63, 22, 16, 0.6),
+        -58px 55px 0 -26px darken(bisque, 3%), -60px 53px 0 -24px tan,
+        -60px 52px 0 -19px white(0.4), -58px 116px 0 -26px darken(bisque, 3%),
+        -60px 114px 0 -24px tan, -60px 113px 0 -19px white(0.4),
+        62px 55px 0 -26px darken(tan, 3%), 60px 53px 0 -24px darken(tan, 15%),
+        60px 52px 0 -19px white(0.2), 62px 116px 0 -26px darken(tan, 3%),
+        60px 114px 0 -24px darken(tan, 15%), 60px 113px 0 -19px white(0.2);
+    }
+
+    &::after {
+      width: 330px;
+      height: 120px;
+      top: 100px;
+      left: 10px;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(
+          to bottom,
+          white(0.5) 60%,
+          black(0.1) 60%
+        ),
+        linear-gradient(to right, black(0.1), black(0.1)),
+        linear-gradient(to bottom, white(0.5) 60%, black(0.15) 60%),
+        linear-gradient(to bottom, white(0.3) 60%, black(0.15) 60%),
+        linear-gradient(to right, white(0.6), white(0.6)),
+        linear-gradient(to right, black(0.1), black(0.1)),
+        linear-gradient(to right, white(0.6), white(0.6)),
+        linear-gradient(to right, black(0.1), black(0.1)),
+        linear-gradient(to right, white(0.6), white(0.6)),
+        linear-gradient(to right, black(0.1), black(0.1)),
+        linear-gradient(to right, white(0.6), white(0.6)),
+        linear-gradient(to right, black(0.1), black(0.1)),
+        linear-gradient(to right, white(0.4), white(0.4)),
+        linear-gradient(to right, black(0.12), black(0.12)),
+        linear-gradient(to right, white(0.4), white(0.4)),
+        linear-gradient(to right, black(0.12), black(0.12)),
+        linear-gradient(to right, white(0.4), white(0.4)),
+        linear-gradient(to right, black(0.12), black(0.12)),
+        linear-gradient(to right, white(0.4), white(0.4)),
+        linear-gradient(to right, black(0.12), black(0.12)),
+        linear-gradient(to right, rgba(63, 22, 16, 0.6), rgba(63, 22, 16, 0.6)),
+        linear-gradient(to right, white(0.4) 50%, white(0.2) 50%),
+        linear-gradient(to right, rgba(63, 22, 16, 0.6), rgba(63, 22, 16, 0.6)),
+        linear-gradient(to right, rgba(63, 22, 16, 0.6), rgba(63, 22, 16, 0.6)),
+        linear-gradient(to right, rgba(63, 22, 16, 0.7), rgba(63, 22, 16, 0.7)),
+        linear-gradient(to right, rgba(63, 22, 16, 0.7), rgba(63, 22, 16, 0.7)); // bottom right window
+      background-size: 190px 5px, 190px 2px, 144px 5px, 144px 5px, 8px 60px,
+        3px 57px, 14px 20px, 3px 20px, 8px 60px, 3px 57px, 14px 20px, 3px 20px,
+        8px 60px, 3px 57px, 14px 20px, 3px 20px, 8px 60px, 3px 57px, 14px 20px,
+        3px 20px, 22px 30px, 32px 38px, 15px 25px, 15px 20px, 15px 25px,
+        15px 20px; // bottom right window
+      background-position: 70px 40px, 70px 50px, 0 101px, 186px 101px, 74px 40px,
+        82px 43px, 71px 100px, 85px 103px, 125px 40px, 133px 43px, 122px 100px,
+        136px 103px, 195px 40px, 203px 43px, 192px 100px, 206px 103px,
+        245px 40px, 253px 43px, 241px 100px, 255px 103px, 154px 4px, 149px 0,
+        25px 15px, 25px 65px, 292px 15px, 292px 65px;
+    }
+  }
+}

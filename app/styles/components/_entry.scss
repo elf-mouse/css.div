@@ -1,0 +1,37 @@
+.element {
+  position: relative;
+
+  width: 100%;
+  min-height: 400px;
+
+  text-align: center;
+
+  &.short {
+    min-height: 320px;
+  }
+
+  &.tall {
+    min-height: 450px;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    &::before,
+    &::after {
+      position: absolute;
+
+      display: block;
+
+      content: '';
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .element div:not(.no-scale) {
+    transform: scale(0.8);
+  }
+}
