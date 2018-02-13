@@ -4,27 +4,34 @@ Marshmallow 2
 
 -----------------------------*/
 
-#marshmallow2
-  background: darken(paleturquoise,7%)
+#marshmallow-2 {
+  background: darken(paleturquoise, 7%);
 
-  div
-    width: 100px
-    height: 120px
-    margin-left: -(@width/2)
-    margin-top: -(@height/2 + 2px)
+  div {
+    width: 100px;
+    height: 120px;
+    margin-left: -(100px/2);
+    margin-top: -(120px/2 + 2px);
 
-    background-color: #eee
-    background-image: radial-gradient(circle at 50% -70px,
-                                                        white(.85) 48%,
-                                                        white(0) 53%),
-                      linear-gradient(-80deg, black(.09),
-                                               white(0) 30%,
-                                               white(0) 60%,
-                                               white(.8) 100%)
+    background-color: #eee;
+    background-image: radial-gradient(
+        circle at 50% -70px,
+        white(0.85) 48%,
+        white(0) 53%
+      ),
+      linear-gradient(
+        -80deg,
+        black(0.09),
+        white(0) 30%,
+        white(0) 60%,
+        white(0.8) 100%
+      );
 
-    border-top-left-radius: 100px 32px
-    border-top-right-radius: 100px 32px
-    border-bottom-left-radius: 100px 40px
-    border-bottom-right-radius: 100px 40px
+    border-top-left-radius: 100px 32px;
+    border-top-right-radius: 100px 32px;
+    border-bottom-left-radius: 100px 40px;
+    border-bottom-right-radius: 100px 40px;
 
-    box-shadow: 6px 6px 0 -2px black(.07)
+    box-shadow: 6px 6px 0 -2px black(0.07);
+  }
+}
