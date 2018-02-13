@@ -14,32 +14,32 @@
 <script>
 import MyMenu from '../components/my-menu';
 
-const commonElements = ['cactus', 'raffle'];
+const commonElements = ['^cactus', '^raffle'];
 
 export default {
   name: 'app',
   components: {
     MyMenu
   },
-  data() {
-    return {
-      className: ''
-    };
-  },
   computed: {
     elementId() {
       let id = this.$route.path ? this.$route.path.replace('/', '') : false;
 
+      return id;
+    },
+    className() {
+      let result = '';
+
       for (let value of commonElements) {
         let re = new RegExp(value);
 
-        if (re.test(id)) {
-          this.className = value;
+        if (re.test(this.elementId)) {
+          result = value.replace('^', '');
           break;
         }
       }
 
-      return id;
+      return result;
     }
   }
 };
