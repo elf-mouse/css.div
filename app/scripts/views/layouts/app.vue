@@ -4,7 +4,7 @@
       <my-menu></my-menu>
     </nav>
     <div class="content">
-      <div class="element" :id="elementId">
+      <div :class="['element', className]" :id="elementId">
         <div></div>
       </div>
     </div>
@@ -14,14 +14,32 @@
 <script>
 import MyMenu from '../components/my-menu';
 
+const commonElements = ['cactus', 'raffle'];
+
 export default {
   name: 'app',
   components: {
     MyMenu
   },
+  data() {
+    return {
+      className: ''
+    };
+  },
   computed: {
     elementId() {
-      return this.$route.path ? this.$route.path.replace('/', '') : false;
+      let id = this.$route.path ? this.$route.path.replace('/', '') : false;
+
+      for (let value of commonElements) {
+        let re = new RegExp(value);
+
+        if (re.test(id)) {
+          this.className = value;
+          break;
+        }
+      }
+
+      return id;
     }
   }
 };
