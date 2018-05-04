@@ -1,0 +1,66 @@
+/*-----------------------------
+Cobra
+-----------------------------*/
+
+$width: 200px;
+$height: 160px;
+
+#cobra {
+  background: #666;
+
+  div {
+    width: $width;
+    height: $height;
+    margin-left: -($width/2);
+    margin-top: -($height/2 + 10);
+    background-repeat: no-repeat;
+    background-image: radial-gradient(
+        circle at 50% 0,
+        gold 50%,
+        transparent 50%
+      ),
+      radial-gradient(ellipse at 100% 100%, black 70%, transparent 70%),
+      linear-gradient(135deg, white 50%, transparent 50%),
+      linear-gradient(135deg, white 50%, transparent 50%),
+      linear-gradient(to right, white, white),
+      radial-gradient(ellipse at 0 50%, white 70%, transparent 70%),
+      radial-gradient(ellipse at 0 50%, black 70%, transparent 70%),
+      radial-gradient(ellipse at 100% 100%, black 70%, transparent 70%); //tail
+    background-size: 3% 3%, 15% 14%, 3% 4%, 3% 4%, 2% 56.3%, 12% 45%, 20% 60%,
+      9% 25%; //tail
+    background-position: 18% 10%, 10% 6%, 10.5% 19%, 14% 19%, 19.5% 15%, 23% 33%,
+      26% 6%, 80% 52.5%; //tail
+
+    &:before,
+    &:after {
+      height: 16%;
+      border-radius: 12px;
+    }
+
+    &:before {
+      width: 90%;
+      bottom: 0;
+      left: 5%;
+      background: linear-gradient(
+        -150deg,
+        black 30%,
+        transparent 30%,
+        transparent 32.5%,
+        black 32.5%
+      );
+    }
+
+    &:after {
+      width: 80%;
+      bottom: 18%;
+      left: 10%;
+      background: linear-gradient(
+        160deg,
+        black 45%,
+        transparent 45%,
+        transparent 49%,
+        black 49%
+      );
+    }
+  }
+}
