@@ -14,7 +14,7 @@ Star Wars Ladies - Leia
     margin-left: -(140px/2);
     margin-top: -(110px/2);
 
-    background-color: lighten(cyan, 50%);
+    background-color: #80ffff; // NOTE: lighten(cyan, 50%);
     background-repeat: no-repeat;
     background-image: radial-gradient(
         ellipse at 50% 80%,
@@ -33,7 +33,7 @@ Star Wars Ladies - Leia
     border-top-right-radius: 110px;
     border-bottom-left-radius: 30px 50px;
     border-bottom-right-radius: 30px 50px;
-    box-shadow: inset 0 6px 0 10px lighten(cyan, 50%),
+    box-shadow: inset 0 6px 0 10px #80ffff, // NOTE: lighten(cyan, 50%),
       0 0 60px 10px rgb(0, 255, 255);
 
     // face

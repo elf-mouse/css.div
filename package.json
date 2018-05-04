@@ -8,17 +8,17 @@
     "prod": "gulp --silent --production"
   },
   "dependencies": {
-    "vue": "^2.5.13",
+    "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^8.2.3",
     "babel-preset-stage-2": "^6.24.1",
-    "balm": "^0.16.1",
-    "eslint": "^4.17.0",
-    "eslint-plugin-vue": "^4.2.2",
+    "balm": "^0.20.2",
+    "eslint": "^4.19.1",
+    "eslint-plugin-vue": "^4.5.0",
     "gulp": "^3.9.1",
-    "vue-loader": "^14.1.1",
-    "vue-template-compiler": "^2.5.13"
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "^2.5.16"
   }
 }

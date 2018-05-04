@@ -1,28 +1,12 @@
 var balm = require('balm');
 
 module.exports = {
-  server: {
-    open: true,
-    proxyTable: {
-      '/api': {
-        target: 'http://your.project.dev',
-        changeOrigin: true
-      }
-    }
-  },
   roots: {
     source: 'app'
   },
-  paths: {
-    source: {
-      css: 'styles',
-      js: 'scripts',
-      img: 'images'
-    }
-  },
   styles: {
     ext: 'scss',
-    autoprefixer: ['> 1%', 'last 2 versions', 'not ie < 9']
+    autoprefixer: ['>0.25%', 'not ie 11', 'not op_mini all']
   },
   scripts: {
     entry: {
@@ -31,7 +15,7 @@ module.exports = {
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue'
+        loader: 'vue-loader'
       }
     ],
     alias: {

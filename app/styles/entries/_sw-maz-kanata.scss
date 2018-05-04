@@ -24,7 +24,8 @@ Star Wars Ladies - Maz Kanata
       radial-gradient(ellipse, darkgray 50%, transparent 50%),
       radial-gradient(ellipse, darkslategrey 50%, transparent 50%),
       radial-gradient(ellipse, darkslategrey 50%, transparent 50%),
-      radial-gradient(ellipse, darken(darkcyan, 10%) 50%, transparent 50%);
+      radial-gradient(ellipse, #006f6f 50%, transparent 50%);
+      // TODO: radial-gradient(ellipse, darken(darkcyan, 20%) 50%, transparent 50%);
     background-size: 90% 107%, 7px 22px, 7px 22px, 30px 43px, 30px 43px,
       60px 30px;
     background-position: 50% -14px, 16px 53px, 128px 53px, 12px 42px, 108px 42px,
