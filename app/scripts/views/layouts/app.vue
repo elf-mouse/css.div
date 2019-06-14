@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import MyMenu from '../components/my-menu';
+import MyMenu from '@/views/components/my-menu';
 
 const commonElements = ['^cactus', '^raffle'];
 

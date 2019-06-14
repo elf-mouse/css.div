@@ -1,24 +1,31 @@
 {
-  "name": "my-vue-project",
-  "version": "3.0.0",
-  "description": "A Vue.js project",
-  "private": true,
+  "name": "a-single-div",
+  "version": "2019.6.14",
   "scripts": {
     "dev": "gulp --silent",
     "prod": "gulp --silent --production"
   },
   "dependencies": {
-    "vue": "^2.5.16",
-    "vue-router": "^3.0.1"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "babel-preset-stage-2": "^6.24.1",
-    "balm": "^0.20.2",
-    "eslint": "^4.19.1",
-    "eslint-plugin-vue": "^4.5.0",
-    "gulp": "^3.9.1",
-    "vue-loader": "^14.2.2",
-    "vue-template-compiler": "^2.5.16"
-  }
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "balm": "^1.5.5",
+    "eslint": "^4.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "gulp": "^4.0.2",
+    "vue-loader": "^14.7.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "private": true
 }
